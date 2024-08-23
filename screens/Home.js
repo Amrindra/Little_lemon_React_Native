@@ -23,7 +23,7 @@ export default function HomeScreen({ navigation }) {
     try {
       const menuItems = await selectAllMenu();
       setMenuItems(menuItems);
-      // This code makes it so that the item categories are dynamic and will auto-populate if a new category is added.
+  
       setFilterCategories([
         ...new Set(
           menuItems?.map(
